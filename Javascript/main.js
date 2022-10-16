@@ -29,3 +29,25 @@
         // console.log(typeof n);
         // let n = null;
         // console.log(typeof n);
+
+        // 04. Oerator 
+        /*
+        * Arithmetic Operator
+        * Increment/Decrement Operator
+        * Comparison Operator
+        * Logical Operator
+        */
+        // // comparision operator
+        // let a = true;
+        // let b = false;
+        // console.log(a && b);
+        // // outpur false
+        // console.log(a || b);
+        // // output true
+
+        // // turnary operator ?
+        // // find big number form 2
+        // let a = 3;
+        // let b = 6;
+        // let max = a>b ? 3:6;
+        // console.log(max);
