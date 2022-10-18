@@ -10,6 +10,12 @@ $(document).ready(function(){
     // $("button").click(function(){
     //     $("h1").css('color','red');
     // });
+
+    // **************keyboard Events ***************
+    $(document).keypress(function(e){
+        // alert('keyboard pressed');
+        console.log(e);
+    });
     
 
 });
