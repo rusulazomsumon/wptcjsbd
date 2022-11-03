@@ -4,6 +4,14 @@
     text-shadow: -1px 0 #393D3F, 0 1px #393D3F, 1px 0 #393D3F, 0 -1px #393D3F;
   }
 
+  h2::before{
+    content: url("../img/icon/question-circle-fill.svg");
+  }
+
+  h2::after{
+    content: url("../img/icon/question-circle-fill.svg");
+  }
+
 /* Top-BER */
 .top-ber{
     background-color: #62929E;
@@ -77,8 +85,24 @@
     background-size: 100% 100%;
     box-shadow: 0px 1px 3px 1px #888888;
 }
+
+.project-item:hover{
+    
+    box-shadow: 0px 2px 1px 3px #3d11b6;
+    transition: 2s;
+
+}
 .project-text{
-    background-color: hsl(200, 5%, 10%);
-    opacity: 0.6;
+    background-color: #3d11b6;
+    color: #C6C5B9;
+    opacity: 0.8;
+}
+
+.project-text:hover{
+    background-color: #3d11b6;
+    color: #C6C5B9;
+    opacity: 0.9;
+    transition: 2s;
+
 }
 
