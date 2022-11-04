@@ -106,3 +106,25 @@
 
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.single-post p,a{
+    color: #393D3F;
+}
+.blog-content-info a{
+    text-decoration: none;
+}
+.blog-content-body a{
+    text-decoration: none;
+}
+/* Big 1st letter */
+.blog-content-body p::first-letter {
+    font-size: 40px;
+    color: #e80222;
+    font-weight: bold;
+    line-height: .75;
+  }
+
+  /* Right Sideber */
+.r-sidebar p,a{
+    text-decoration: none;
+}
