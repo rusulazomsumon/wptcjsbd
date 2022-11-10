@@ -1,0 +1,35 @@
+@font-face {
+    font-family: prothoma;
+    src: url(./font/PROTHOMA.TTF);
+}
+@font-face {
+    font-family: myFont;
+    src: url(./font/LiAdorTrikonomitiUnicode-Regular.ttf);
+}
+@font-face {
+    font-family: Rupushi Bangla;
+    src: url(./font/RuposhiBanglaUnicode.ttf);
+}
+*{
+    font-family: Rupushi Bangla;
+    color: #212529;
+}
+/* Headline */
+.headline{
+    font-weight: 700;
+    line-height: 34px;
+    font-family: Rupushi Bangla;
+    background-color: #FFFFFF;
+}
+.content{
+    
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+
+}
+/* Author */
+.author{
+    font-style: italic; 
+    font-weight: 900;
+}
