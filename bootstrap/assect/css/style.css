@@ -1,7 +1,8 @@
 /* Typography */
+
 /* box shadow  */
 .con-box {
-    box-shadow: 0px 0px 10px 0px #2A2438;
+    box-shadow: 1px 1px 10px 1px #2A2438;
 }
 .heading {
     color: #C6C5B9;
@@ -132,4 +133,62 @@
 
 .r-sidebar p,a{
     text-decoration: none;
+}
+
+/* Footer Area  */
+/* 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%((((((((FOOTER AREA)))))))))%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+footer{
+    color: #000;
+}
+.footer-item-container{
+    text-align: center;
+    font-size: larger;
+}
+.footer-item-container a{
+    text-decoration: none;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+.copyright p{
+    color: #000;
+}
+/* Back to top */
+.back-to-top{
+    background-color: #202222;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    padding: 10px;
+    color: #DCE4E7;
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: x-large;
+
+    /* hide in general, Deactive Mode */
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.back-to-top.active {
+    bottom: 20px;
+    pointer-events: auto;
+    opacity: .75;
+    border-radius: 50%;
+    
+}
+.back-to-top.active:hover {
+    opacity: .95;
+    background-color: #233535;
 }
