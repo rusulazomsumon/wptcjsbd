@@ -10,6 +10,13 @@
     font-family: Rupushi Bangla;
     src: url(./font/RuposhiBanglaUnicode.ttf);
 }
+/* using cdn more: https://fonts.maateen.me/bangla/ */
+@import url('https://fonts.maateen.me/bangla/font.css');
+/* example: 
+body {
+    font-family: 'Bangla', Arial, sans-serif !important;
+}
+*/
 *{
     font-family: Rupushi Bangla;
     color: #212529;
