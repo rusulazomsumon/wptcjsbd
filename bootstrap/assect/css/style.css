@@ -1,17 +1,47 @@
-/* Typography */
+/* @@@@@@@@@@@@@@@@@@@@@@@Typography@@@@@@@@@@@@@@@@@@@@ */
+/* Bangla font */
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/durbar/stylesheet.css');
+@import url('https://fonts.googleapis.com/css?family=Atma');
+/* https://fonts.shahid.pro/ */
+p,a{
+    font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
+    font-size: 1rem;
+}
+
+h1{
+    font-family: 'Durbar','charukolaultralight', Arial, sans-serif !important;
+    font-size: 3rem;
+}
+
+h2 a{
+    font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
+    font-size: 1.5rem;
+}
+
+h3{
+    font-family: 'charukolaultralight', Arial, sans-serif !important;
+    font-size: 2rem;
+}
+
+/* color */
+p,h1,h2,h3,h5,a{
+    color: #C6C5B9;
+
+}
 
 /* box shadow content box  */
 .con-box {
     box-shadow: 1px 1px 10px 1px #2A2438;
 }
-.heading {
+/* .heading {
     color: #161616;
   }
 
   h2::after{
     content: '\270d';
     padding-right: 10px;
-  }
+  } */
 /* https://www.unicodepedia.com/unicode/dingbats/270d/writing-hand/ */
 
 /*############### Top-BER ##################*/
@@ -25,7 +55,7 @@
 
 /* #########About Area##########  */
 .about-bg{
-    background-image:radial-gradient(circle at 84% 82%, 
+    /* background-image:radial-gradient(circle at 84% 82%, 
         rgba(217, 217, 217,0.03) 0%, rgba(217, 217, 217,0.03) 21%,
         transparent 21%, transparent 100%),radial-gradient(circle at 75% 56%, 
         rgba(3, 3, 3,0.03) 0%, rgba(3, 3, 3,0.03) 30%,transparent 30%, 
@@ -42,24 +72,22 @@
            rgba(161, 161, 161,0.03) 64%,transparent 64%, transparent 100%),
            radial-gradient(circle at 40% 84%, rgba(115, 115, 115,0.03) 0%,
             rgba(115, 115, 115,0.03) 14%,transparent 14%, transparent 100%),
-            linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
-    background-position: center right;
+            linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
+    background-image: repeating-linear-gradient(0deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(144,0%,9%),hsl(144,0%,9%));            background-position: center right;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     backdrop-filter: blur(20px);
+}
+
+.about-info-con{
+    padding-right: 30px;
 }
 
 .about-info{
    width: 100vw;
    height: auto;
 }
-.about-info-con h1,h3,p{
-    color: #C6C5B9;
 
-}
-.about-info-con .details{
-    color: #C6C5B9;
-
-}
 .btn{
     color: #C6C5B9;
     border: 2px solid #C6C5B9;
@@ -67,31 +95,45 @@
 }
 
 .btn:hover{
-    color: #393D3F;
-    border: 2px solid #C6C5B9;
-    background-color: #62929E;
+    color: #161616;
+    border: 2px solid #0c0000;
+    background-color: #C6C5B9;
     border-radius: 20px 10px 20px 10px;
     transition: 1s;
 }
 /* profile pic */
 .about-info .proPic img{
     width: 100%;
+    opacity: .7;
 }
 
-/* #########Blog Area##########  */
-.blog-area a:link{
-    color: #393D3F;
-    text-decoration: none;
-    
-}
+/* ########################Blog Area#######################  */
+/* blog heading */
+.blog-area .heading {
+    color: #161616;
+  }
+
+.blog-area .heading::after{
+    content: '\270d';
+    padding-right: 10px;
+  }
+
 .blog-area p{
     color: #393D3F;
+}
+
+.blog-content a{
+    color: rgb(126, 12, 12);
 }
 
 /* #########Service Area##########  */
 
 .service-item{
-    background-color: #62929E;
+    background-image: repeating-linear-gradient(0deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(144,0%,9%),hsl(144,0%,9%));
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(20px);
 }
 .service-icon{
     width: 100%;
@@ -130,7 +172,7 @@
 
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Single Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .single-post p,a{
     color: #393D3F;
 }
@@ -211,3 +253,5 @@ footer{
     opacity: .95;
     background-color: #233535;
 }
+
+
