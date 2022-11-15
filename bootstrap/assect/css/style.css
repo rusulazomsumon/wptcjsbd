@@ -14,7 +14,7 @@ h1{
     font-size: 3rem;
 }
 
-h2 a{
+h2,h2 a{
     font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
     font-size: 1.5rem;
 }
@@ -26,6 +26,11 @@ h3{
 
 /* color */
 p,h1,h2,h3,h5,a{
+    color: #C6C5B9;
+
+}
+
+h2 a{
     color: #C6C5B9;
 
 }
@@ -80,7 +85,7 @@ p,h1,h2,h3,h5,a{
 }
 
 .about-info-con{
-    padding-right: 30px;
+    padding-right: 40px;
 }
 
 .about-info{
