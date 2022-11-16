@@ -60,26 +60,7 @@ h2 a{
 
 /* #########About Area##########  */
 .about-bg{
-    /* background-image:radial-gradient(circle at 84% 82%, 
-        rgba(217, 217, 217,0.03) 0%, rgba(217, 217, 217,0.03) 21%,
-        transparent 21%, transparent 100%),radial-gradient(circle at 75% 56%, 
-        rgba(3, 3, 3,0.03) 0%, rgba(3, 3, 3,0.03) 30%,transparent 30%, 
-        transparent 100%),radial-gradient(circle at 74% 53%, rgba(153, 153, 
-        153,0.03) 0%, rgba(153, 153, 153,0.03) 95%,transparent 95%, 
-        transparent 100%),radial-gradient(circle at 86% 43%,
-         rgba(209, 209, 209,0.03) 0%, rgba(209, 209, 209,0.03) 83%,
-         transparent 83%, transparent 100%),
-         radial-gradient(circle at 64% 88%, rgba(192, 192, 192,0.03) 0%, 
-         rgba(192, 192, 192,0.03) 2%,transparent 2%, transparent 100%),
-         radial-gradient(circle at 73% 77%, rgba(205, 205, 205,0.03) 0%,
-          rgba(205, 205, 205,0.03) 18%,transparent 18%, transparent 100%),
-          radial-gradient(circle at 57% 51%, rgba(161, 161, 161,0.03) 0%,
-           rgba(161, 161, 161,0.03) 64%,transparent 64%, transparent 100%),
-           radial-gradient(circle at 40% 84%, rgba(115, 115, 115,0.03) 0%,
-            rgba(115, 115, 115,0.03) 14%,transparent 14%, transparent 100%),
-            linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
-    background-image: repeating-linear-gradient(0deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(144,0%,9%),hsl(144,0%,9%));            background-position: center right;
-    background-repeat: no-repeat;
+    background-image: repeating-linear-gradient(45deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(17, 17, 17),rgb(66, 66, 66));    background-repeat: no-repeat;
     background-attachment: fixed;
     backdrop-filter: blur(20px);
 }
@@ -132,7 +113,24 @@ h2 a{
 }
 
 /* #########Service Area##########  */
-
+.service-card { 
+    padding: 5;
+}
+.service-content {
+    box-shadow: rgba(185, 146, 146, 0.35) 0px 5px 15px;
+}
+.service-text p{
+    color: #C6C5B9;
+}
+.service-content:hover {
+    transition: 2s;
+    background-color: rgb(65, 46, 46);
+    box-shadow: rgba(235, 229, 229, 0.35) 0px 5px 15px;
+    
+}
+.service-content .btn{
+    margin-bottom: 10px;
+}
 .service-item{
     background-image: repeating-linear-gradient(0deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(144,0%,9%),hsl(144,0%,9%));
     background-position: center right;
@@ -150,19 +148,12 @@ h2 a{
 }
 
 /* #########Projects Area########### */
-.project-item{
-    background: url("../img/rundsorg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow: 0px 1px 3px 1px #888888;
-}
 
-.project-item:hover{
-    
-    box-shadow: 0px 2px 1px 3px #3d11b6;
-    transition: 2s;
+.project-ttl .heading {
+    color: #161616;
+  }
 
-}
+
 .project-text{
     background-color: #3d11b6;
     color: #C6C5B9;
@@ -176,6 +167,80 @@ h2 a{
     transition: 2s;
 
 }
+
+/* %%%%%%%%%%%%%%%Accordiant CSS%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Style the tab */
+.tab {
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: rgba(5, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height: 20%;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: #161616;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: monospace;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    font-size: 1.5rem;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    color: #C6C5B9;
+    font-size: 1.5rem;
+  }
+  
+  /* Style the tab content */
+ .tabcontent {
+    padding: 10px 12px;
+    color:#161616;
+    box-shadow: rgba(5, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height: 80%;
+  }
+  .project-info h3,p {
+    color:#161616;
+
+  }
+  /* Project Icon */
+  .project-info .icon .bi{
+    font-size: 2rem;
+  }
+
+  /* Project Card */
+  .project-card {
+    padding: 10;
+    box-shadow: rgba(5, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+
+  .item-details {
+    margin-bottom: 10px;
+  }
+
+  .project-card .icon a{
+    margin-right: 5px;
+    border-radius: 50%;
+
+  }
+
+  
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Single Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .single-post p,a{
@@ -207,6 +272,10 @@ h2 a{
 */
 footer{
     color: #000;
+}
+
+.footer-area {
+    background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
 }
 .footer-item-container{
     text-align: center;
