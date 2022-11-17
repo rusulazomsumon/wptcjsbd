@@ -496,6 +496,10 @@ footer{
     height: 16px;
     width: 16px;
 }
+/* Related post : content footer */
+.con-ft-area .related-post .post{
+    padding: 10px;
+}
 
   /* %%%%%%%%%%%%%%%%%%%%%%%%%%%Right Sideber %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
