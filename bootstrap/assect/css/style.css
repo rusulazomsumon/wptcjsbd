@@ -9,12 +9,13 @@ p,a{
     font-size: 1rem;
 }
 
+
 h1{
     font-family: 'Durbar','charukolaultralight', Arial, sans-serif !important;
     font-size: 3rem;
 }
 
-h2,h2 a{
+h2,h3 a{
     font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
     font-size: 1.5rem;
 }
@@ -25,7 +26,7 @@ h3{
 }
 
 /* color */
-p,h1,h2,h3,h5,a{
+p,h1,h2,h3,h5, a{
     color: #C6C5B9;
 
 }
@@ -39,14 +40,24 @@ h2 a{
 .con-box {
     box-shadow: 1px 1px 10px 1px #2A2438;
 }
-/* .heading {
-    color: #161616;
-  }
 
-  h2::after{
-    content: '\270d';
-    padding-right: 10px;
-  } */
+/* ------------------------------------------------------------------- */
+
+/* blog post quotes */
+q {
+    font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
+    color: #8b885e;
+    font-size: 1.5rem;
+}
+
+/* blog post content */
+.blog-main-content p{
+    font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
+    color: #8b885e;
+    font-size: 1.2rem;
+}
+/* ------------------------------------------------------------------- */
+
 /* https://www.unicodepedia.com/unicode/dingbats/270d/writing-hand/ */
 
 /*############### Top-BER ##################*/
@@ -54,19 +65,54 @@ h2 a{
     background-color: #161616;
     color: #C6C5B9;
 }
+
+/* $$$$$$$$$$Logo Animation$$$$$$$$ */
+.animate-text
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #C6C5B9 0%,
+    #8b885e 29%,
+    #363411 67%,
+    #0f0e01 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #C6C5B9;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* lego animation end */
 .top-ber a{
     color: #C6C5B9;
 }
 
 /* #########About Area##########  */
 .about-bg{
-    background-image: repeating-linear-gradient(45deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(17, 17, 17),rgb(66, 66, 66));    background-repeat: no-repeat;
+    background-image: repeating-linear-gradient(45deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(207,0%,63%,0.05) 0px, hsla(207,0%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(207,0%,63%,0.05) 11px, hsla(207,0%,63%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(17, 17, 17),rgb(66, 66, 66));    
+    background-repeat: no-repeat;
     background-attachment: fixed;
     backdrop-filter: blur(20px);
 }
 
 .about-info-con{
     padding-right: 40px;
+}
+
+.about-info-con p{
+    color: #C6C5B9;
 }
 
 .about-info{
@@ -93,8 +139,11 @@ h2 a{
     opacity: .7;
 }
 
-/* ########################Blog Area#######################  */
+/* ##############@@@@@@@@@@@@##########Blog Area#################@@@@@@@@@######  */
 /* blog heading */
+.blog-item .blog-fImg img{
+    width: 100%;
+}
 .blog-area .heading {
     color: #161616;
   }
@@ -111,8 +160,35 @@ h2 a{
 .blog-content a{
     color: rgb(126, 12, 12);
 }
+/* ||||||||||pagignation area|||||| */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .pages {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .page {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 
-/* #########Service Area##########  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .page:hover {
+    background-color: #202222;
+    color: #C6C5B9;
+  }
+  /* pagignation end */
+/* #####@@@@@@@@@@@@@@@@@@@@@@@@@@@@####Service Area###@@@@@@@@@@@@@@@@@@@@#######  */
 .service-card { 
     padding: 5;
 }
@@ -242,40 +318,42 @@ h2 a{
 
   
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Single Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-.single-post p,a{
-    color: #393D3F;
-}
-.blog-content-info a{
-    text-decoration: none;
-}
-.blog-content-body a{
-    text-decoration: none;
-}
-/* Big 1st letter */
-.blog-content-body p::first-letter {
-    font-size: 40px;
-    color: #e80222;
-    font-weight: bold;
-    line-height: .75;
-  }
-
-  /* Right Sideber */
-
-.r-sidebar p,a{
-    text-decoration: none;
-}
 
 /* Footer Area  */
 /* 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%((((((((FOOTER AREA)))))))))%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%((((((((FOOTER AREA  - Contact )))))))))%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-footer{
-    color: #000;
+.contac-info .icon-text a{
+    color: #C6C5B9;
+    font-size: 1.5rem;
 }
+
+/* Social Icon */
+.social-icon a{
+    margin: 5;
+}
+
+.social-icon p{
+    color: #C6C5B9;
+}
+
+.social-icon p::after{
+    content: " = --- -- ->";
+}
+
+.social-icon p::before{
+    content: " <- -- --- = ";
+}
+
+footer{
+    color: #C6C5B9;
+}
+
 
 .footer-area {
     background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
+    background-attachment: fixed;
+    backdrop-filter: blur(20px);
 }
 .footer-item-container{
     text-align: center;
@@ -291,7 +369,9 @@ footer{
 .copyright p{
     color: #000;
 }
-/* Back to top */
+
+
+/*%%%%%%%%%%%%%%%%%%%%%% Back to top %%%%%%%%%%%%%%%%%%%%%%%*/
 .back-to-top{
     background-color: #202222;
     width: 50px;
@@ -329,3 +409,96 @@ footer{
 }
 
 
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Single Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Single Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Blog Single Page@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.single-post h3 {
+    color: #0f0e01;
+    font-weight: 700;
+}
+.single-post p,a{
+    color: #393D3F;
+}
+/* post icon area */
+.single-post .pub-date {
+    margin-left: 10px;
+    display: flex;
+}
+.blog-content-info a{
+    text-decoration: none;
+}
+/* icon text */
+.blog-content-info a p{
+    padding-left: 10px;
+}
+.blog-content-body a{
+    text-decoration: none;
+}
+/* ########Quote########## */
+/* .blog-content-body hr.vertical {
+    border: 0;
+    margin: 0;
+    border-left: 5px solid #8b885e;
+    height: 50px;
+    float: left;
+  }
+
+  .blog-content-body q{
+    padding-right: 10px;
+  } */
+  
+
+/* Big 1st letter */
+.blog-content-body p::first-letter {
+    font-size: 40px;
+    color: #e80222;
+    font-weight: bold;
+    line-height: .75;
+  }
+
+/* ######## Content bootom area ############# */
+
+/* icons */
+.con-ft-area .icon {
+    padding-right: 10px;
+}
+
+/* content love notifacation */
+.con-ft-area .notification {
+    text-decoration: none;
+    padding: 0px 16px;
+    position: relative;
+    display: inline-block;
+  }
+  
+.con-ft-area .notification:hover{
+    color: red;
+}
+  
+  .notification .badge {
+    font-size: 1rem;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    padding: 1px 2px;
+    color: #0f0e01;
+  }
+  .notification .badge:hover {
+    color: red;
+  }
+    /* notification end */
+
+    /* ####Social Share##### */
+.social-share a img{
+    margin-top: 20px;
+    color: #0f0e01;
+    height: 16px;
+    width: 16px;
+}
+
+  /* %%%%%%%%%%%%%%%%%%%%%%%%%%%Right Sideber %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.r-sidebar p,a{
+    text-decoration: none;
+}
