@@ -496,9 +496,21 @@ footer{
     height: 16px;
     width: 16px;
 }
+/* ########Blog Author######### */
+.blog-author-info-area{
+    box-shadow: rgba(114, 86, 86, 0.35) 0px 5px 15px;
+    
+}
+
 /* Related post : content footer */
 .con-ft-area .related-post .post{
     padding: 10px;
+}
+
+.con-ft-area .related-post h5{
+    padding: 10px;
+    color: #0f0e01;
+    font-family: 'Atma','charukolaultralight', Arial, sans-serif !important;
 }
 
   /* %%%%%%%%%%%%%%%%%%%%%%%%%%%Right Sideber %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
