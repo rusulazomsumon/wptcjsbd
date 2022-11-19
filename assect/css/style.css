@@ -157,6 +157,9 @@ q {
     color: #393D3F;
 }
 
+.blog-content .cat-name{
+    color: #0f0e01;
+}
 .blog-content a{
     color: rgb(126, 12, 12);
 }
