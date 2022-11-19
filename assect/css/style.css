@@ -160,8 +160,8 @@ q {
 .blog-content .cat-name{
     color: #0f0e01;
 }
-.blog-content .blog-heading {
-    color: rgb(140, 236, 61);
+.blog-content .content-head .blog-heading {
+    color: rgb(140, 236, 61) !important;
     font-size: 2rem !important;
 }
 
