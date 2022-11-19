@@ -160,9 +160,13 @@ q {
 .blog-content .cat-name{
     color: #0f0e01;
 }
-.blog-content a h2{
+.blog-content h2{
     color: rgb(126, 12, 12);
     font-size: 1.5rem;
+}
+
+.blog-content a{
+    color: rgb(126, 12, 12);
 }
 /* ||||||||||pagignation area|||||| */
 .pagination {
