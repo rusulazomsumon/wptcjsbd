@@ -162,7 +162,7 @@ q {
 }
 .blog-content h2{
     color: rgb(126, 12, 12);
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 
 .blog-content a{
