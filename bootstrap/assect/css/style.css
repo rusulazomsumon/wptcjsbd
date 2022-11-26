@@ -514,7 +514,59 @@ footer{
 }
 
   /* %%%%%%%%%%%%%%%%%%%%%%%%%%%Right Sideber %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* ##########Typography ##############*/
+.r-sidebar {
+    font-family: 'charukolaultralight', Arial, sans-serif !important;
 
-.r-sidebar p,a{
+}
+/* all a tag */
+.r-sidebar a{
     text-decoration: none;
+}
+/* Sections Headins */
+.r-sidebar h3{
+    font-size: 1.5rem;
+    color: #161616;
+    font-weight: 700;
+}
+.r-sidebar p,a{
+    font-size: 1.15rem;
+    color: #202222;
+}
+
+
+/* Contents  */
+.r-sidebar .content a{
+    font-size: 1.25rem;
+    color: #0e0244;
+    font-weight: 500;
+    list-style:square;
+}
+
+/* ***********Categoris Post******** */
+/* File icon before */
+/* https://www.unicodepedia.com/unicode/miscellaneous-symbols-and-pictographs/1f4c1/file-folder/ */
+.r-sidebar .category ul li::before{
+    content: '\1F4C1';
+}
+.r-sidebar .category ul li{
+    list-style: none;
+}
+.r-sidebar .category ul > ul li{
+    list-style: none;
+    color: #202222;
+    font-size: 1rem;
+    font-family: 'charukolaultralight', Arial, sans-serif !important;
+
+}
+/* ********Tags Cloud********** */
+.r-sidebar .tags li{
+    list-style: none;
+}
+
+.r-sidebar .tags ul{
+    
+}
+.r-sidebar .tags ul a{
+    
 }
